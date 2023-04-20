@@ -1,2 +1,2 @@
-# it116-sp23-2-sample-github-page
+# replit-html-css-template
 Sample GitHub Page
