@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>REPLIT HTML TEMPLATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
     <style>
       html{
         background-color: #ccc;
@@ -11,11 +13,47 @@
         font-family: Arial;
         background-color: #fff;
         max-width: 960px;
+        margin: auto;
+        width: 90%;
+        padding: 1%;
+      }
+
+      nav{
+        text-align:center; /* centers the nav */
+      }
+
+
+      nav ul {
+        list-style:none; /* removes the bullets */
+      }
+      nav ul li
+        {
+        display:inline-block; /* makes horizontal, but able to declare margins */
+        margin:0 2%; /* margin left-right, gets smaller as necessary */
+      }
+      nav a:hover{
+        text-decoration: none; /* on hover, underline goes away */
+      }
+
+
+      footer {
+        text-align: center;
+        clear: both;
       }
     </style>
   </head>
   <body>
     <h1>REPLIT HTML TEMPLATE</h1>
+    <nav>
+      <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+      </ul>
+   </nav>
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
