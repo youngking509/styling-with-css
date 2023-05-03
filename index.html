@@ -1,73 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>REPLIT HTML TEMPLATE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <style>
-      html{
-        background-color: #ccc;
-      }
 
-      body {
-        font-family: Arial;
-        background-color: #fff;
-        max-width: 960px;
-        margin: auto;
-        width: 90%;
-        padding: 1%;
-      }
+<head>
+  <title>REPLIT HTML TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    html {
+      background-color: #ccc;
+    }
 
-      nav{
-        text-align:center; /* centers the nav */
-      }
+    body {
+      font-family: Arial;
+      background-color: #fff;
+      max-width: 960px;
+      margin: auto;
+      width: 90%;
+      padding: 1%;
+    }
 
-
-      nav ul {
-        list-style:none; /* removes the bullets */
-      }
-      nav ul li
-        {
-        display:inline-block; /* makes horizontal, but able to declare margins */
-        margin:0 2%; /* margin left-right, gets smaller as necessary */
-      }
-      nav a:hover{
-        text-decoration: none; /* on hover, underline goes away */
-      }
+    nav {
+      text-align: center;
+      /* centers the nav */
+    }
 
 
-      footer {
-        text-align: center;
-        clear: both;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>REPLIT HTML TEMPLATE</h1>
-    <nav>
-      <ul>
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Link 3</a></li>
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
-          <li><a href="#">Link 6</a></li>
-      </ul>
-   </nav>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
-    <p>Clever content goes here</p>
-    <footer>
-        <p><small>&copy; 2023 by 
-            YOUR NAME HERE, All Rights Reserved ~ 
-            <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
-            <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
-       </p>
-    </footer>
-    <script>
-      document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
-      document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
-    </script>
-  </body>  
+    nav ul {
+      list-style: none;
+      /* removes the bullets */
+    }
+
+    nav ul li {
+      display: inline-block;
+      /* makes horizontal, but able to declare margins */
+      margin: 0 2%;
+      /* margin left-right, gets smaller as necessary */
+    }
+
+    nav a:hover {
+      text-decoration: none;
+      /* on hover, underline goes away */
+    }
+    
+    /* style table */
+    table.my-table {
+      border-collapse: collapse;
+    }
+
+
+    table.my-table th {
+      background-color: #54585d;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 13px;
+      border: 1px solid #54585d;
+    }
+
+
+    table.my-table td {
+      padding: 15px;
+    }
+
+    table.my-table td {
+      color: #636363;
+      border: 1px solid #383c3f;
+    }
+
+    table.my-table tr {
+      background-color: #63aaf5;
+    }
+
+    table.my-table tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+
+    footer {
+      text-align: center;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>REPLIT HTML TEMPLATE</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+      <li><a href="#">Link 6</a></li>
+    </ul>
+  </nav>
+
+
+  <table class="my-table">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>john@example.com</td>
+    </tr>
+    <tr>
+      <td>Jane</td>
+      <td>Doe</td>
+      <td>jane@example.com</td>
+    </tr>
+  </table>
+  <footer>
+    <p><small>&copy; 2023 by
+        YOUR NAME HERE, All Rights Reserved ~
+        <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+        <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+    </p>
+  </footer>
+  <script>
+    document.getElementById("html-checker").setAttribute("href", "https://validator.w3.org/nu/?doc=" + location.href);
+    document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+  </script>
+</body>
+
 </html>
